@@ -1,0 +1,435 @@
+/home/amsequeira/enzymeClassification/models/embedding/64_64_32_500_post_pre_bilstm_attentio_cv_only_enz_emb20_lev1_ec90
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f8a7431c820>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f8a7431c280>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f8a7431c8b0>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <deep_ml.DeepML object at 0x7f8a7431c640>, 'x_test': array([[13,  7, 17, ...,  0,  0,  0],
+       [13, 19,  3, ...,  0,  0,  0],
+       [13, 17,  4, ...,  0,  0,  0],
+       ...,
+       [13, 15,  3, ...,  0,  0,  0],
+       [11, 11,  2, ...,  1, 16,  1],
+       [15,  8, 19, ...,  8,  8,  9]], dtype=int8), 'y_test': array([1., 1., 0., ..., 2., 6., 2.], dtype=float32), 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+         0.0       0.89      0.87      0.88      3813
+         1.0       0.90      0.93      0.91     10869
+         2.0       0.86      0.88      0.87      6897
+         3.0       0.92      0.84      0.88      2585
+         4.0       0.93      0.84      0.88      1616
+         5.0       0.96      0.94      0.95      3258
+         6.0       0.96      0.96      0.96      1372
+
+    accuracy                           0.90     30410
+   macro avg       0.92      0.89      0.90     30410
+weighted avg       0.90      0.90      0.90     30410
+
+
+===confusion_matrix===
+
+[[ 3310   231   182    43    19    17    11]
+ [  150 10057   490    64    35    60    13]
+ [  153   547  6067    50    26    34    20]
+ [   46   175   148  2184    20    11     1]
+ [   41    93    86    21  1360    13     2]
+ [   20   100    69     9     7  3052     1]
+ [   15    13    26     0     0     0  1318]]
+
+===multilabel confusion matrix===
+
+[[[26172   425]
+  [  503  3310]]
+
+ [[18382  1159]
+  [  812 10057]]
+
+ [[22512  1001]
+  [  830  6067]]
+
+ [[27638   187]
+  [  401  2184]]
+
+ [[28687   107]
+  [  256  1360]]
+
+ [[27017   135]
+  [  206  3052]]
+
+ [[28990    48]
+  [   54  1318]]]
+
+===scores report===
+metrics	scores
+Accuracy	0.8993
+MCC	0.8707
+log_loss	0.4322
+f1 score weighted	0.8993
+f1 score macro	0.9043
+f1 score micro	0.8993
+roc_auc ovr	0.9852
+roc_auc ovo	0.9875
+precision	0.9000
+recall	0.8993
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f8a7431c820>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f8a7431c280>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f8a7431c8b0>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <deep_ml.DeepML object at 0x7f8a7431c640>, 'x_test': array([[13, 13,  2, ...,  0,  0,  0],
+       [13, 11,  3, ...,  0,  0,  0],
+       [13,  7,  1, ...,  0,  0,  0],
+       ...,
+       [16, 20,  8, ...,  8,  8, 14],
+       [13, 16, 11, ...,  0,  0,  0],
+       [ 9,  5,  1, ...,  8, 11, 15]], dtype=int8), 'y_test': array([1., 1., 1., ..., 2., 2., 2.], dtype=float32), 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+         0.0       0.87      0.87      0.87      3813
+         1.0       0.91      0.91      0.91     10869
+         2.0       0.85      0.88      0.87      6897
+         3.0       0.90      0.88      0.89      2585
+         4.0       0.90      0.88      0.89      1616
+         5.0       0.97      0.93      0.95      3258
+         6.0       0.97      0.96      0.97      1372
+
+    accuracy                           0.90     30410
+   macro avg       0.91      0.90      0.91     30410
+weighted avg       0.90      0.90      0.90     30410
+
+
+===confusion_matrix===
+
+[[3335  199  194   42   27    9    7]
+ [ 196 9928  563   91   50   26   15]
+ [ 161  482 6093   66   42   37   16]
+ [  56  113  116 2267   26    6    1]
+ [  30   52   85   24 1420    5    0]
+ [  39   91   72   11   11 3034    0]
+ [  11   17   21    4    0    2 1317]]
+
+===multilabel confusion matrix===
+
+[[[26104   493]
+  [  478  3335]]
+
+ [[18587   954]
+  [  941  9928]]
+
+ [[22462  1051]
+  [  804  6093]]
+
+ [[27587   238]
+  [  318  2267]]
+
+ [[28638   156]
+  [  196  1420]]
+
+ [[27067    85]
+  [  224  3034]]
+
+ [[28999    39]
+  [   55  1317]]]
+
+===scores report===
+metrics	scores
+Accuracy	0.9008
+MCC	0.8729
+log_loss	0.4096
+f1 score weighted	0.9011
+f1 score macro	0.9073
+f1 score micro	0.9008
+roc_auc ovr	0.9866
+roc_auc ovo	0.9891
+precision	0.9016
+recall	0.9008
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f8a7431c820>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f8a7431c280>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f8a7431c8b0>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <deep_ml.DeepML object at 0x7f8a7431c640>, 'x_test': array([[13, 12,  3, ...,  0,  0,  0],
+       [13, 16, 20, ...,  0,  0,  0],
+       [13, 16, 11, ...,  0,  0,  0],
+       ...,
+       [12, 12, 11, ..., 16,  9, 20],
+       [13,  6, 12, ...,  0,  0,  0],
+       [17, 12, 15, ...,  3,  9, 11]], dtype=int8), 'y_test': array([1., 1., 0., ..., 1., 1., 1.], dtype=float32), 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+         0.0       0.90      0.85      0.87      3814
+         1.0       0.90      0.93      0.91     10869
+         2.0       0.85      0.88      0.87      6896
+         3.0       0.92      0.84      0.88      2584
+         4.0       0.91      0.84      0.87      1617
+         5.0       0.97      0.94      0.95      3258
+         6.0       0.97      0.96      0.96      1372
+
+    accuracy                           0.90     30410
+   macro avg       0.92      0.89      0.90     30410
+weighted avg       0.90      0.90      0.90     30410
+
+
+===confusion_matrix===
+
+[[ 3243   245   233    37    26    16    14]
+ [  124 10086   496    61    48    47     7]
+ [  118   554  6097    53    34    24    16]
+ [   54   159   169  2171    18    12     1]
+ [   36    84    96    35  1355     9     2]
+ [   27    85    76     4     2  3063     1]
+ [   11    22    21     2     2     2  1312]]
+
+===multilabel confusion matrix===
+
+[[[26226   370]
+  [  571  3243]]
+
+ [[18392  1149]
+  [  783 10086]]
+
+ [[22423  1091]
+  [  799  6097]]
+
+ [[27634   192]
+  [  413  2171]]
+
+ [[28663   130]
+  [  262  1355]]
+
+ [[27042   110]
+  [  195  3063]]
+
+ [[28997    41]
+  [   60  1312]]]
+
+===scores report===
+metrics	scores
+Accuracy	0.8986
+MCC	0.8698
+log_loss	0.4438
+f1 score weighted	0.8986
+f1 score macro	0.9026
+f1 score micro	0.8986
+roc_auc ovr	0.9855
+roc_auc ovo	0.9874
+precision	0.8995
+recall	0.8986
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f8a7431c820>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f8a7431c280>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f8a7431c8b0>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <deep_ml.DeepML object at 0x7f8a7431c640>, 'x_test': array([[13,  1,  1, ...,  0,  0,  0],
+       [13,  3, 16, ...,  0,  0,  0],
+       [13,  7,  2, ...,  0,  0,  0],
+       ...,
+       [ 6, 17,  1, ...,  4,  6, 11],
+       [10,  6,  6, ...,  8, 16, 11],
+       [14,  5, 17, ...,  3,  6,  3]], dtype=int8), 'y_test': array([1., 1., 0., ..., 2., 2., 6.], dtype=float32), 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.75      0.83      3813
+         1.0       0.85      0.95      0.89     10868
+         2.0       0.88      0.83      0.86      6897
+         3.0       0.82      0.88      0.85      2585
+         4.0       0.95      0.79      0.86      1616
+         5.0       0.96      0.93      0.95      3258
+         6.0       0.97      0.94      0.96      1372
+
+    accuracy                           0.88     30409
+   macro avg       0.91      0.87      0.88     30409
+weighted avg       0.88      0.88      0.88     30409
+
+
+===confusion_matrix===
+
+[[ 2866   544   194   150    22    22    15]
+ [   62 10293   320   120    24    40     9]
+ [  100   837  5751   140    18    40    11]
+ [   35   182    94  2262     5     6     1]
+ [   15   163    95    55  1274    14     0]
+ [    9   114    73    24     3  3034     1]
+ [    8    42    23     5     0     0  1294]]
+
+===multilabel confusion matrix===
+
+[[[26367   229]
+  [  947  2866]]
+
+ [[17659  1882]
+  [  575 10293]]
+
+ [[22713   799]
+  [ 1146  5751]]
+
+ [[27330   494]
+  [  323  2262]]
+
+ [[28721    72]
+  [  342  1274]]
+
+ [[27029   122]
+  [  224  3034]]
+
+ [[29000    37]
+  [   78  1294]]]
+
+===scores report===
+metrics	scores
+Accuracy	0.8805
+MCC	0.8467
+log_loss	0.4255
+f1 score weighted	0.8796
+f1 score macro	0.8842
+f1 score micro	0.8805
+roc_auc ovr	0.9836
+roc_auc ovo	0.9856
+precision	0.8843
+recall	0.8805
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f8a7431c820>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f8a7431c280>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f8a7431c8b0>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <deep_ml.DeepML object at 0x7f8a7431c640>, 'x_test': array([[13,  2,  3, ...,  0,  0,  0],
+       [13, 16,  8, ...,  0,  0,  0],
+       [13, 12, 12, ...,  0,  0,  0],
+       ...,
+       [13,  1, 17, ...,  0,  0,  0],
+       [20,  6, 15, ...,  4,  2,  3],
+       [ 8, 15, 15, ...,  9, 17, 11]], dtype=int8), 'y_test': array([1., 1., 1., ..., 0., 2., 2.], dtype=float32), 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+         0.0       0.83      0.89      0.86      3813
+         1.0       0.88      0.93      0.91     10868
+         2.0       0.88      0.83      0.85      6897
+         3.0       0.93      0.84      0.88      2585
+         4.0       0.94      0.83      0.88      1616
+         5.0       0.95      0.94      0.95      3258
+         6.0       0.96      0.95      0.95      1372
+
+    accuracy                           0.89     30409
+   macro avg       0.91      0.89      0.90     30409
+weighted avg       0.89      0.89      0.89     30409
+
+
+===confusion_matrix===
+
+[[ 3376   229   135    35     7    15    16]
+ [  207 10137   373    50    24    62    15]
+ [  284   733  5707    58    30    58    27]
+ [  113   179   109  2161    17     5     1]
+ [   38   107    95    25  1339    12     0]
+ [   37    97    51     6     5  3062     0]
+ [   18    28    20     1     0     4  1301]]
+
+===multilabel confusion matrix===
+
+[[[25899   697]
+  [  437  3376]]
+
+ [[18168  1373]
+  [  731 10137]]
+
+ [[22729   783]
+  [ 1190  5707]]
+
+ [[27649   175]
+  [  424  2161]]
+
+ [[28710    83]
+  [  277  1339]]
+
+ [[26995   156]
+  [  196  3062]]
+
+ [[28978    59]
+  [   71  1301]]]
+
+===scores report===
+metrics	scores
+Accuracy	0.8906
+MCC	0.8597
+log_loss	0.4271
+f1 score weighted	0.8903
+f1 score macro	0.8961
+f1 score micro	0.8906
+roc_auc ovr	0.9848
+roc_auc ovo	0.9872
+precision	0.8919
+recall	0.8906
+
+===TRAIN MODELS with CV===
+
+train_model_cv	Accuracy	MCC	log_loss	f1 score weighted	f1 score macro	f1 score micro	roc_auc ovr	roc_auc ovo	precision	recall
+0	0.8993094376849721	0.8706640767784701	0.4321864025623424	0.8992582282924734	0.9043063861939624	0.8993094376849721	0.9851799152192524	0.987525989785305	0.8999748466334696	0.8993094376849721
+1	0.9008220979940809	0.872949657324443	0.4096439520574677	0.9010725804255224	0.9073235026176923	0.9008220979940809	0.9865881075336587	0.9890805415969334	0.9015981856293149	0.9008220979940809
+2	0.8986188753699441	0.8697507508131737	0.44378106661816513	0.8985739004523289	0.9026490175172839	0.8986188753699441	0.9855415605107599	0.9874335346842229	0.8995439591374604	0.8986188753699441
+3	0.8804630208162058	0.8467273190988431	0.4254616918678828	0.8796098637594982	0.8841808677624964	0.8804630208162058	0.9835545932221943	0.9855960155185001	0.8843337999403431	0.8804630208162058
+4	0.890624486171857	0.8597241466006929	0.42710308185825535	0.8903239457163755	0.8960910276922736	0.890624486171857	0.984813589081086	0.9872281342648228	0.8919246073953216	0.890624486171857
+mean	0.8939675836074119	0.8639631901231244	0.4276352389928227	0.8937677037292397	0.8989101603567416	0.8939675836074119	0.9851355531133903	0.9873728431699569	0.8954750797471819	0.8939675836074119
+std	0.007625008907121899	0.009738573544620337	0.011046218750814926	0.007986369792695238	0.008231430051453822	0.007625008907121899	0.0009879088381692604	0.0011064744401386877	0.006496615685462312	0.007625008907121899
+
+Accuracy
+MCC
+log_loss
+f1 score weighted
+f1 score macro
+f1 score micro
+roc_auc ovr
+roc_auc ovo
+precision
+recallFinished train_model_cv in 67280.3160 secs
+

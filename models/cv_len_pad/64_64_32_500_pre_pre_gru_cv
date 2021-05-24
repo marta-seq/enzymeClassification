@@ -1,0 +1,156 @@
+/home/amsequeira/enzymeClassification/models/cv_len_pad/64_64_32_500_pre_pre_gru_cv
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7ff4a07e8190>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7ff4a07e8340>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7ff4a07e83a0>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <deep_ml.DeepML object at 0x7ff4a07e8160>, 'x_test': array([[[1, 0, 0, ..., 0, 0, 0],
+        [1, 0, 0, ..., 0, 0, 0],
+        [1, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 1, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[1, 0, 0, ..., 0, 0, 0],
+        [1, 0, 0, ..., 0, 0, 0],
+        [1, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 1, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[1, 0, 0, ..., 0, 0, 0],
+        [1, 0, 0, ..., 0, 0, 0],
+        [1, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 1, 0, 0],
+        [1, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 1],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 1, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=int8), 'y_test': array([2., 2., 1., ..., 0., 0., 0.], dtype=float32), 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+         0.0       0.72      0.82      0.77      4541
+         1.0       0.86      0.82      0.84      3813
+         2.0       0.85      0.91      0.88     10869
+         3.0       0.88      0.78      0.83      6897
+         4.0       0.86      0.85      0.85      2585
+         5.0       0.94      0.79      0.86      1617
+         6.0       0.97      0.94      0.95      3258
+         7.0       0.94      0.94      0.94      1372
+
+    accuracy                           0.86     34952
+   macro avg       0.88      0.86      0.86     34952
+weighted avg       0.86      0.86      0.86     34952
+
+
+===confusion_matrix===
+
+[[3718   69  405  242   44    8   12   43]
+ [ 123 3117  367  113   64   11   11    7]
+ [ 515  136 9858  216   89   14   30   11]
+ [ 571  168  574 5386  120   32   33   13]
+ [  64   47  176   82 2196    8   11    1]
+ [  75   42  139   46   33 1276    5    1]
+ [  28   21   99   33   16    4 3056    1]
+ [  41    7   12   12    4    0    2 1294]]
+
+===multilabel confusion matrix===
+
+[[[28994  1417]
+  [  823  3718]]
+
+ [[30649   490]
+  [  696  3117]]
+
+ [[22311  1772]
+  [ 1011  9858]]
+
+ [[27311   744]
+  [ 1511  5386]]
+
+ [[31997   370]
+  [  389  2196]]
+
+ [[33258    77]
+  [  341  1276]]
+
+ [[31590   104]
+  [  202  3056]]
+
+ [[33503    77]
+  [   78  1294]]]
+
+===scores report===
+metrics	scores
+Accuracy	0.8555
+MCC	0.8232
+log_loss	0.4406
+f1 score weighted	0.8558
+f1 score macro	0.8649
+f1 score micro	0.8555
+roc_auc ovr	0.9791
+roc_auc ovo	0.9821
+precision	0.8594
+recall	0.8555
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7ff4a07e8190>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7ff4a07e8340>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7ff4a07e83a0>]

@@ -1,0 +1,136 @@
+/home/amsequeira/enzymeClassification/models/128_64_32_2v_lstm
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f2b0785f7c0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f2b0785f460>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f2b0785f520>]
+===TRAIN MODELS===
+
+run_model
+('Training Accuracy mean: ', 0.7151461574435234)
+('Validation Accuracy mean: ', 0.6831495898962021)
+('Training Loss mean: ', 0.8929978516697884)
+('Validation Loss mean: ', 1.0248103052377702)
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+masking (Masking)            (None, 500, 20)           0         
+_________________________________________________________________
+bidirectional (Bidirectional (None, 500, 256)          152576    
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 500, 128)          164352    
+_________________________________________________________________
+bidirectional_2 (Bidirection (None, 64)                41216     
+_________________________________________________________________
+dense (Dense)                (None, 32)                2080      
+_________________________________________________________________
+batch_normalization (BatchNo (None, 32)                128       
+_________________________________________________________________
+dropout (Dropout)            (None, 32)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 8)                 264       
+=================================================================
+Total params: 360,616
+Trainable params: 360,552
+Non-trainable params: 64
+_________________________________________________________________Finished run_model in 17015.5926 secs
+
+
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <deep_ml.DeepML object at 0x7f2b0785f340>, 'x_test': None, 'y_test': None, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.59      0.68      0.63      4542
+           1       0.61      0.16      0.26      3813
+           2       0.46      0.71      0.56     10869
+           3       0.42      0.39      0.41      6897
+           4       0.42      0.09      0.15      2585
+           5       0.54      0.05      0.09      1616
+           6       0.58      0.55      0.57      3258
+           7       0.56      0.60      0.58      1372
+
+    accuracy                           0.49     34952
+   macro avg       0.52      0.41      0.41     34952
+weighted avg       0.50      0.49      0.45     34952
+
+
+===confusion_matrix===
+
+[[3081   20  547  725    5    0   32  132]
+ [ 172  629 1966  730   39    4  213   60]
+ [ 919  182 7738 1182   85    9  502  252]
+ [ 803  104 2864 2722   65   12  234   93]
+ [  54   32 1473  605  237   28  106   50]
+ [  92   31  862  245  107   79  180   20]
+ [  38   26 1165  140   19   13 1804   53]
+ [  68    1  314  143    1    0   15  830]]
+
+===multilabel confusion matrix===
+
+[[[28264  2146]
+  [ 1461  3081]]
+
+ [[30743   396]
+  [ 3184   629]]
+
+ [[14892  9191]
+  [ 3131  7738]]
+
+ [[24285  3770]
+  [ 4175  2722]]
+
+ [[32046   321]
+  [ 2348   237]]
+
+ [[33270    66]
+  [ 1537    79]]
+
+ [[30412  1282]
+  [ 1454  1804]]
+
+ [[32920   660]
+  [  542   830]]]
+
+===scores report===
+metrics	scores
+Accuracy	0.4898
+MCC	0.3556
+log_loss	1.4046
+f1 score weighted	0.4548
+f1 score macro	0.4054
+f1 score micro	0.4898
+roc_auc ovr	0.7903
+roc_auc ovo	0.8082
+precision	0.5014
+recall	0.4898

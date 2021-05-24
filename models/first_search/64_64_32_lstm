@@ -1,0 +1,173 @@
+/home/amsequeira/enzymeClassification/models/64_64_32_lstm
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fc484f1aa30>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fc484f1a6d0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fc484f1a790>]/home/amsequeira/enzymeClassification/models/64_64_32_lstm
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f04c709e760>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f04c709e400>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f04c709e4c0>]
+===TRAIN MODELS===
+
+run_model
+('Training Accuracy mean: ', 0.7604700639843941)
+('Validation Accuracy mean: ', 0.7409942299127579)
+('Training Loss mean: ', 0.8001685059070587)
+('Validation Loss mean: ', 0.8754959803819656)
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+masking (Masking)            (None, 500, 20)           0         
+_________________________________________________________________
+bidirectional (Bidirectional (None, 500, 128)          43520     
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 500, 128)          98816     
+_________________________________________________________________
+bidirectional_2 (Bidirection (None, 64)                41216     
+_________________________________________________________________
+dense (Dense)                (None, 32)                2080      
+_________________________________________________________________
+batch_normalization (BatchNo (None, 32)                128       
+_________________________________________________________________
+dropout (Dropout)            (None, 32)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 16)                528       
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 16)                64        
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 16)                0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 8)                 136       
+=================================================================
+Total params: 186,488
+Trainable params: 186,392
+Non-trainable params: 96
+_________________________________________________________________Finished run_model in 16154.0482 secs
+
+
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <deep_ml.DeepML object at 0x7f04c709e2e0>, 'x_test': None, 'y_test': None, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.73      0.78      0.75      4542
+           1       0.91      0.82      0.86      3813
+           2       0.90      0.89      0.89     10869
+           3       0.83      0.81      0.82      6897
+           4       0.89      0.84      0.86      2585
+           5       0.66      0.88      0.76      1616
+           6       0.96      0.94      0.95      3258
+           7       0.90      0.96      0.93      1372
+
+    accuracy                           0.85     34952
+   macro avg       0.85      0.86      0.85     34952
+weighted avg       0.86      0.85      0.86     34952
+
+
+===confusion_matrix===
+
+[[3530   39  263  402   23  164   20  101]
+ [ 145 3111  209  155   89   82   16    6]
+ [ 495  122 9636  352   59  152   38   15]
+ [ 507   76  381 5593   55  229   43   13]
+ [  61   38  127  134 2165   52    6    2]
+ [  32   17   56   48   35 1425    2    1]
+ [  34   10   59   35    8   38 3074    0]
+ [  18    1   11   14   11    1    3 1313]]
+
+===multilabel confusion matrix===
+
+[[[29118  1292]
+  [ 1012  3530]]
+
+ [[30836   303]
+  [  702  3111]]
+
+ [[22977  1106]
+  [ 1233  9636]]
+
+ [[26915  1140]
+  [ 1304  5593]]
+
+ [[32087   280]
+  [  420  2165]]
+
+ [[32618   718]
+  [  191  1425]]
+
+ [[31566   128]
+  [  184  3074]]
+
+ [[33442   138]
+  [   59  1313]]]
+
+===scores report===
+metrics	scores
+Accuracy	0.8539
+MCC	0.8220
+log_loss	0.4598
+f1 score weighted	0.8551
+f1 score macro	0.8535
+f1 score micro	0.8539
+roc_auc ovr	0.9786
+roc_auc ovo	0.9821
+precision	0.8587
+recall	0.8539

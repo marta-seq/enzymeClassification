@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@051c6274-36f2-447f-8c01-0602a93d640d" />
+        <remote-mappings server-id="python@sftp://amsequeira@turing.di.uminho.pt:22/home/amsequeira/miniconda/envs/tf_gpu/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$/../enzymeClassification" remote-root="/home/amsequeira/enzymeClassification" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>

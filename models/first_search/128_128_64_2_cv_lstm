@@ -1,0 +1,249 @@
+/home/amsequeira/enzymeClassification/models/128_128_64_2_cv_lstm
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fa543f9d8b0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fa543f9d6d0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fa543f9d910>]/home/amsequeira/enzymeClassification/models/128_128_64_2_cv_lstm
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f3fcf39a8b0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f3fcf39a6d0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f3fcf39a910>]/home/amsequeira/enzymeClassification/models/128_128_64_2_cv_lstm
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fed3725a8b0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fed3725a6d0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fed3725a910>]/home/amsequeira/enzymeClassification/models/128_128_64_2_cv_lstm
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f713c15a8b0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f713c15a6d0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f713c15a910>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <deep_ml.DeepML object at 0x7f713c15a5b0>, 'x_test': array([[[1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 1., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 1., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'y_test': array([2., 2., 1., ..., 0., 0., 0.], dtype=float32), 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+         0.0       0.66      0.75      0.70      4541
+         1.0       0.86      0.63      0.73      3813
+         2.0       0.81      0.82      0.82     10869
+         3.0       0.71      0.77      0.74      6897
+         4.0       0.83      0.65      0.73      2585
+         5.0       0.74      0.71      0.73      1617
+         6.0       0.83      0.93      0.88      3258
+         7.0       0.96      0.86      0.91      1372
+
+    accuracy                           0.78     34952
+   macro avg       0.80      0.77      0.78     34952
+weighted avg       0.78      0.78      0.77     34952
+
+
+===confusion_matrix===
+
+[[3403   45  408  555   13   38   54   25]
+ [ 174 2386  512  401  125   68  144    3]
+ [ 746  157 8950  620   87   85  212   12]
+ [ 611   78  622 5301   83   70  120   12]
+ [  74   54  298  320 1678  112   49    0]
+ [  89   25  147  129   35 1152   39    1]
+ [  22   16  109   42    5   21 3043    0]
+ [  76    7   44   60    1    1    0 1183]]
+
+===multilabel confusion matrix===
+
+[[[28619  1792]
+  [ 1138  3403]]
+
+ [[30757   382]
+  [ 1427  2386]]
+
+ [[21943  2140]
+  [ 1919  8950]]
+
+ [[25928  2127]
+  [ 1596  5301]]
+
+ [[32018   349]
+  [  907  1678]]
+
+ [[32940   395]
+  [  465  1152]]
+
+ [[31076   618]
+  [  215  3043]]
+
+ [[33527    53]
+  [  189  1183]]]
+
+===scores report===
+metrics	scores
+Accuracy	0.7752
+MCC	0.7247
+log_loss	0.6682
+f1 score weighted	0.7746
+f1 score macro	0.7778
+f1 score micro	0.7752
+roc_auc ovr	0.9543
+roc_auc ovo	0.9601
+precision	0.7817
+recall	0.7752
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f713c15a8b0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f713c15a6d0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f713c15a910>]

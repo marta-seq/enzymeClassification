@@ -1,0 +1,156 @@
+/home/amsequeira/enzymeClassification/models/first_model_search_cv/128_64_64_cv
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f65a4693f10>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f65a4693d00>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f65a4693f70>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <deep_ml.DeepML object at 0x7f65a4693be0>, 'x_test': array([[[1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 1., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 1., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'y_test': array([2., 2., 1., ..., 0., 0., 0.], dtype=float32), 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+         0.0       0.50      0.61      0.55      4541
+         1.0       0.00      0.00      0.00      3813
+         2.0       0.39      0.70      0.50     10869
+         3.0       0.33      0.35      0.34      6897
+         4.0       0.00      0.00      0.00      2585
+         5.0       0.00      0.00      0.00      1617
+         6.0       0.53      0.24      0.33      3258
+         7.0       0.41      0.26      0.32      1372
+
+    accuracy                           0.40     34952
+   macro avg       0.27      0.27      0.25     34952
+weighted avg       0.32      0.40      0.34     34952
+
+
+===confusion_matrix===
+
+[[2759    0  899  766    0    0   26   91]
+ [ 213    0 2656  775    0    0   89   80]
+ [ 981    0 7578 1871    0    0  239  200]
+ [1034    0 3161 2444    0    0  174   84]
+ [ 101    0 1649  750    0    0   71   14]
+ [ 109    0 1138  322    0    0   42    6]
+ [  70    0 2032  340    0    0  773   43]
+ [ 198    0  555  217    0    0   45  357]]
+
+===multilabel confusion matrix===
+
+[[[27705  2706]
+  [ 1782  2759]]
+
+ [[31139     0]
+  [ 3813     0]]
+
+ [[11993 12090]
+  [ 3291  7578]]
+
+ [[23014  5041]
+  [ 4453  2444]]
+
+ [[32367     0]
+  [ 2585     0]]
+
+ [[33335     0]
+  [ 1617     0]]
+
+ [[31008   686]
+  [ 2485   773]]
+
+ [[33062   518]
+  [ 1015   357]]]
+
+===scores report===
+metrics	scores
+Accuracy	0.3980
+MCC	0.2201
+log_loss	1.8061
+f1 score weighted	0.3361
+f1 score macro	0.2541
+f1 score micro	0.3980
+roc_auc ovr	0.7072
+roc_auc ovo	0.7199
+precision	0.3152
+recall	0.3980
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f65a4693f10>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f65a4693d00>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f65a4693f70>]

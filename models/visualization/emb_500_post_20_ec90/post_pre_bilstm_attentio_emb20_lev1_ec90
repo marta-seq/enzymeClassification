@@ -1,0 +1,141 @@
+/home/amsequeira/enzymeClassification/models/visualization/emb_500_post_20_ec90/post_pre_bilstm_attentio_emb20_lev1_ec90
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fdf807d9700>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fdf807d96a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fdf807d92e0>]
+===TRAIN MODELS===
+
+run_model
+('Training Accuracy mean: ', 0.8353373423218727)
+('Validation Accuracy mean: ', 0.7980072358250618)
+('Training Loss mean: ', 0.5582204170525074)
+('Validation Loss mean: ', 0.7086343204975128)
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+masking (Masking)            (None, 500)               0         
+_________________________________________________________________
+embedding (Embedding)        (None, 500, 20)           420       
+_________________________________________________________________
+bidirectional (Bidirectional (None, 500, 128)          43520     
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 500, 128)          98816     
+_________________________________________________________________
+bidirectional_2 (Bidirection (None, 500, 64)           41216     
+_________________________________________________________________
+attention (attention)        (None, 64)                564       
+_________________________________________________________________
+dense (Dense)                (None, 32)                2080      
+_________________________________________________________________
+batch_normalization (BatchNo (None, 32)                128       
+_________________________________________________________________
+dropout (Dropout)            (None, 32)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 16)                528       
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 16)                64        
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 16)                0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 7)                 119       
+=================================================================
+Total params: 187,455
+Trainable params: 187,359
+Non-trainable params: 96
+_________________________________________________________________Finished run_model in 13072.8397 secs
+
+
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <deep_ml.DeepML object at 0x7fdf807d9640>, 'x_test': None, 'y_test': None, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.87      0.86      0.87      3813
+           1       0.87      0.94      0.90     10869
+           2       0.90      0.81      0.85      6897
+           3       0.87      0.87      0.87      2585
+           4       0.91      0.87      0.89      1616
+           5       0.97      0.93      0.95      3258
+           6       0.97      0.94      0.96      1372
+
+    accuracy                           0.89     30410
+   macro avg       0.91      0.89      0.90     30410
+weighted avg       0.89      0.89      0.89     30410
+
+
+===confusion_matrix===
+
+[[ 3296   261   144    63    20    19    10]
+ [  146 10227   314    90    46    34    12]
+ [  209   858  5602   125    48    42    13]
+ [   64   162    90  2248    17     3     1]
+ [   26    99    55    30  1400     5     1]
+ [   35   133    37     8    13  3031     1]
+ [   11    55     8     7     1     0  1290]]
+
+===multilabel confusion matrix===
+
+[[[26106   491]
+  [  517  3296]]
+
+ [[17973  1568]
+  [  642 10227]]
+
+ [[22865   648]
+  [ 1295  5602]]
+
+ [[27502   323]
+  [  337  2248]]
+
+ [[28649   145]
+  [  216  1400]]
+
+ [[27049   103]
+  [  227  3031]]
+
+ [[29000    38]
+  [   82  1290]]]
+
+===scores report===
+metrics	scores
+Accuracy	0.8910
+MCC	0.8603
+log_loss	0.4536
+f1 score weighted	0.8905
+f1 score macro	0.8977
+f1 score micro	0.8910
+roc_auc ovr	0.9848
+roc_auc ovo	0.9872
+precision	0.8922
+recall	0.8910
