@@ -17,7 +17,35 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\adjuv_functions\features_functions\data\PhysicoChemical.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\adjuv_functions\features_functions\data\blosum50.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\adjuv_functions\features_functions\data\blosum62.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\adjuv_functions\features_functions\data\bonds.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\adjuv_functions\features_functions\data\nlf.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
