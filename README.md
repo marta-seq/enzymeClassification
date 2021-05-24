@@ -7,6 +7,11 @@ Enzyme functional annotation has been a challenging problem in Bioinformatics fo
 Our results show that for enzyme classification, networks formed with Bidirectional recurrent layers and attention lead to better results. In addition, using simpler encoding schemes (e.g. one-hot) leads to higher performance. Using attention and embedding layers, we demonstrate that the model is capable of learning biological meaningful representations.
 
 If you use this repository for your research please cite the following publication:
-ADD
- Recurrent deep neural networks for enzyme functional annotation; Sequeira, AM, Rocha, M. 
+
+Sequeira, A.M., Rocha, M.:Recurrent deep neural networks for enzyme functional annotation;  PACBB Proceedings, SpringerInternational Publishing (2021) 
+Waiting for acceptance
+
+
+Sequeira, A.M., Lousa, D., Rocha, M.: ProPythia: A Python Automated Platformfor the Classification of Proteins Using Machine Learning, vol. 1240 AISC. SpringerInternational Publishing (2021)
+ 
  
