@@ -59,6 +59,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\datasets\ecpred_uniprot_uniref_90.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\deep_ml.py">
           <value>
             <Attribute>
